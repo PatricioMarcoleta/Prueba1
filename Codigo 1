@@ -1,0 +1,29 @@
+SubProceso Contador( arreglo, largo )
+	Dimension Repetidos[100];
+	
+	para i = 0 hasta largo -1 hacer
+		Arreglo[i] := Comparador;
+		Para j = 0 hasta largo -1 Hacer
+			Si Comparador = Arreglo[j] entonces
+				C_Repetidos := C_Repetidos + 1  ;
+				j:= largo -1;
+				
+			FinSi
+		FinPara
+		
+		
+		
+	FinPara
+	Escribir "Dentro Del Arreglo hay", C_Repetidos, " numeros repetidos";
+FinSubProceso
+
+Proceso Principal
+	Dimension V[20];
+	Para i=0 hasta 19 Hacer
+		V[i]:= Azar(10 + 1);
+	FinPara
+	Para i=0 hasta 19 Hacer
+		Escribir sin saltar "[", V[i] ,"]";
+	FinPara
+	Contador(V,20);
+FinProceso
